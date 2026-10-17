@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b1220;
+  --color-ink-soft: #151e30;
+  --color-gold: #c9a24b;
+  --color-gold-light: #e2c47e;
+  --color-ivory: #faf7f2;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
