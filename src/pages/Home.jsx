@@ -1,15 +1,21 @@
-import PropertyCard from "../components/PropertyCard";
-import { properties } from "../data/properties";
+import Hero from "../components/home/Hero";
+import Stats from "../components/home/Stats";
+import FeaturedProperties from "../components/home/FeaturedProperties";
+import BrowseByArea from "../components/home/BrowseByArea";
+import WhyChooseUs from "../components/home/WhyChooseUs";
+import Testimonials from "../components/home/Testimonials";
+import CallToAction from "../components/home/CallToAction";
 
 export default function Home() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-12">
-      <h1 className="mb-8 font-display text-4xl">Featured Properties</h1>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {properties.slice(0, 6).map((p) => (
-          <PropertyCard key={p.id} property={p} />
-        ))}
-      </div>
-    </section>
+    <>
+      <Hero />
+      <Stats />
+      <FeaturedProperties />
+      <BrowseByArea />
+      <WhyChooseUs />
+      <Testimonials />
+      <CallToAction />
+    </>
   );
 }
